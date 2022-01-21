@@ -54,8 +54,8 @@ header{
   8px 27px 8px rgba(0, 0, 0, 0.5),
   8px 28px 35px rgba(0, 0, 0, 0.9);
   position: relative;
-  left:550px;
-  top:63px;
+  margin-left:1%;
+  margin-right:0.5%;
 }
 #Crypto {
 
@@ -84,9 +84,21 @@ header{
   8px 27px 8px rgba(0, 0, 0, 0.5),
   8px 28px 35px rgba(0, 0, 0, 0.9);
   position: relative;
-  left:960px;
-  bottom:74px;
+  margin-right:1%;
+  margin-left:0.5%;
 }
+
+
+.play{
+  margin:auto;
+  text-align: center;
+  position:relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:2.3%;
+}
+
 #Play {
 
   font-family: "Alagard", Times, serif;
@@ -113,15 +125,17 @@ header{
   5px 23px 5px rgba(0, 0, 0, 0.3),
   8px 27px 8px rgba(0, 0, 0, 0.5),
   8px 28px 35px rgba(0, 0, 0, 0.9);
-  position: relative;
-  left:840px;
-  bottom:20px;
+    margin-top:3%;
+    margin-left: 3%;
+    margin-right:3%;
+    text-align: center;
 }
 #home{
 
   color:#ffffff;
   position:relative;
   right:60px;
+ 
 
 }
 #whitepaper{
@@ -136,12 +150,15 @@ header{
   position:relative;
   left:0px;
 
+
 }
 
 #faq{
   color:#ffffff;
   position:relative;
   left:30px;
+
+
 
 }
 
@@ -151,7 +168,7 @@ p{
   color:whitesmoke;
   
 }
-div h1 p a {
+div h2 p a {
   color: #ffffff;
   word-spacing: 10px
 
@@ -160,11 +177,7 @@ div img{
   width:60px;
   height:68px;
   position:relative;
-  left:30px;
-  margin: -52em 435px 35em;
-  filter: drop-shadow(.75em .75em .5em black);
-
-
+  display:inline-block;
 }
 div h3 a {
   color: #ffffff;
@@ -178,3 +191,18 @@ div h3 a {
   100% {
     background-position: 500%;
   }
+}
+.social-media{
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  left: 1.5%;
+  top: 400%;
+  
+}
+.redes{
+  width:40px;
+  height:30px;
+  margin-top: 30px;
+  margin-right: 30px;
+}

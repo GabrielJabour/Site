@@ -22,40 +22,54 @@
 </head>
 
 
-<body>
+<body onload="execSound()">
 
 
     <div class="container">
         
         <header class="header">
             
-            <h1 id="home"><p><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">HOME</a></p></h1>
-            <h1 id="whitepaper"><p><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">WHITEPAPER</a></p></h1>
-            <h1 id="events"><p><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">EVENTS</a></p></h1>
-            <h1 id="faq"><p><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">FAQ</a></p></h1>
+            <h2 id="home"><p><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">HOME</a></p></h1>
+            <h2 id="whitepaper"><p><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">WHITEPAPER</a></p></h1>
+            <h2 id="events"><p><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">EVENTS</a></p></h1>
+            <h2 id="faq"><p><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">FAQ</a></p></h1>
     
         </header>        
 
         <main class="main">
-            <h2 id="Snake">Snake</h2>
-            <h2 id="Crypto">Crypto</h2>
-            <h3 id="Play"><t><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">PLAY</t></li></h3>
+            
+            <div class="play">
+                <img src="img/appleespelhada.png">
+                <h1 id="Snake">Snake</h2>
+                <h1 id="Crypto">Crypto</h2>
+                <img src="img/apple.png" width="400">
+            </div>
+            <h3 id="Play"><a href="https://www.youtube.com/watch?v=a40r8AhnPm8">PLAY</a></h3>
         </main>
+        <div class="hud">
 
-        <div>
-            <img src="img/appleespelhada.png">
-            <img src="img/apple.png">
+            <div class="social-media">
+                <a href="https://twitter.com/"><img class="redes" src="./img/twitter-logo.png"></a>
+                <a href="https://discord.gg/rpWUcAF5"><img class="redes" src="./img/discord-logo.png"></a>
+            </div> 
+
+
         </div>
 
+
         <div>
-            <audio controls autoplay loop>
-                <source src="audio/BodySoundtrack.mp3" type="audio/mp3">
+            <audio preload="auto" controls autoplay muted="true" loop style="display:block" id="playAudio">
+                <source src="audio/BodySoundtrack.mp3" type="audio/mpeg">
+            </audio>
         </div>
 
-        <footer class="footer">
-        </footer>
+        <script>
+            function execSound(){
+            var a = document.getElementById("playAudio")
+            a.play()
+            }
+        </script>
 
     </div>
-    
 </body>
 </html>
