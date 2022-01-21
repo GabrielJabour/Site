@@ -1,3 +1,4 @@
+
 body {
     background-image: url(../img/bd2.png);
     background-repeat: repeat;
@@ -10,19 +11,21 @@ body {
     overflow: hidden;
     animation:bd_anim 125s linear infinite;
 }
-
-
   @keyframes bd_anim{
     0%{background-position:0 0;}
     00%{background-position: -2122px 0;}
   }
+  
+    
+ 
 
 header{
     height: 60px;
     overflow: hidden;
-    
+    opacity: 1 ;
 
 }
+
 
 #Snake {
   
@@ -114,6 +117,33 @@ header{
   left:840px;
   bottom:20px;
 }
+#home{
+
+  color:#ffffff;
+  position:relative;
+  right:60px;
+
+}
+#whitepaper{
+  color:#ffffff;
+  position:relative;
+  right:30px;
+
+}
+
+#events{
+  color:#ffffff;
+  position:relative;
+  left:0px;
+
+}
+
+#faq{
+  color:#ffffff;
+  position:relative;
+  left:30px;
+
+}
 
 p{
   font-family: "Alagard", Times, serif;
@@ -136,8 +166,15 @@ div img{
 
 
 }
-div h3 t a {
+div h3 a {
   color: #ffffff;
   word-spacing: 10px
 
 }
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
